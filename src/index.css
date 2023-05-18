@@ -1,13 +1,116 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0px;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app {
+    display: grid;
+    grid-template-rows: 75px auto;
+    height: 100vh;
+}
+
+.field {
+    grid: 2 / 3;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    flex-direction: row;
+    align-items: center;
+    background-color: lightgrey;
+    padding: 20px 0px;
+}
+
+.input-field > label {
+    padding: 20px;
+    margin: 10px;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.input-field > label > input {
+    padding: 10px;
+    margin: 10px 0px 10px 10px;
+    font-size: 20px;
+    width: 100px;
+    height: 50px;
+}
+
+.input-field > label > input:focus {
+    outline: none;
+}
+
+.input-field > button {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 20px auto 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 100px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: darkblue;
+    color: white;
+
+}
+
+.input-field > button:active {
+    border: 1px solid black;
+    background-color: lightgreen;
+    color: black;
+}
+
+.inner-field {
+    display: flex;
+    justify-content: center;
+}
+
+.inner-field-board {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+/*navbar*/
+.navbar {
+    background-color: grey;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar > p {
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkblue;
+}
+
+.navbar > .button {
+    background-color: darkblue;
+    color: white;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    cursor: pointer;
+}
+
+.navbar > .button:hover {
+    background-color: lightgreen;
+    color: black;
+}
+
+.navbar > select {
+    padding: 10px 20px;
+}
+
+.navbar > select:focus {
+    outline: none;
 }
