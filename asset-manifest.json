@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/algorithms-visualizer/static/css/main.56b9d9e4.css",
+    "main.js": "/algorithms-visualizer/static/js/main.c51e6407.js",
+    "index.html": "/algorithms-visualizer/index.html",
+    "main.56b9d9e4.css.map": "/algorithms-visualizer/static/css/main.56b9d9e4.css.map",
+    "main.c51e6407.js.map": "/algorithms-visualizer/static/js/main.c51e6407.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.56b9d9e4.css",
+    "static/js/main.c51e6407.js"
+  ]
+}
